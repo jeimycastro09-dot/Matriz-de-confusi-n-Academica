@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-ivory-50: #FAF8F4;
+  --color-ivory-100: #F4EFE6;
+  --color-ivory-200: #E6DFD3;
+  --color-ivory-300: #D5CCC0;
+
+  --color-navy-950: #0A1628;
+  --color-navy-900: #0F1F38;
+  --color-navy-800: #172E52;
+  --color-navy-700: #22406E;
+
+  --color-teal-700: #0F766E;
+  --color-teal-600: #0D9488;
+  --color-teal-500: #14B8A6;
+  --color-teal-400: #2DD4BF;
+  --color-teal-50: #F0FDFA;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FAF8F4;
+    color: #0F1F38;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #0D9488;
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

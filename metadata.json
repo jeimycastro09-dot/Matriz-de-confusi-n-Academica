@@ -1,0 +1,6 @@
+{
+  "name": "BancoLab · Matriz de confusión",
+  "description": "Laboratorio educativo interactivo sobre matriz de confusión, métricas de clasificación e impacto económico en contextos bancarios y financieros.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
